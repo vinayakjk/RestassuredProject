@@ -21,7 +21,7 @@ public class HTTPRequest {
 
 	//Test case to GET the data of user
 
-	@Test (enabled = true)
+	@Test (priority = 2,enabled = true)
 	public void getUsersData()
 	{
 		given()
@@ -33,7 +33,7 @@ public class HTTPRequest {
 
 	//Test case to create user
 	
-	@Test (priority = 1)
+	@Test (priority = 1, enabled = false)
 	public void creatUsers()
 	{
 		HashMap data=new HashMap();
